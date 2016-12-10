@@ -1,0 +1,78 @@
+<!--
+Name: Connor McLaughlin
+CS Username: cmclaugh
+Email: Connor_McLaughlin@student.uml.edu
+Student ID: 01372970
+
+File: /usr/cs/undergrad/2017/cmclaugh/public_html/table.html
+GUI Programming I Assignment 7: Multiplication Table
+
+
+ updated  on December 9, 2016 at 7:41 PM
+-->
+
+<!Doctype html>
+
+
+<html>
+	<head>
+		<title> Multiplication Table </title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		
+		<link rel="stylesheet" href="table.css" />
+	</head>
+	<body>
+		<div class=container>
+			<form id="data" name="data" method="post" action="">
+				<div id="inputs">
+				    <!--  Inputs with typing support -->
+					<p> Enter Horizontal Start </p>
+					<input type="text" id="x_start" name="x_start" data-placement=bottom  value=1 />
+					<p> Enter Horizontal End </p>
+					<input type="text" id="x_end" name="x_end"  data-placement=bottom  value=10 />
+					<p> Enter Verticle Start </p>
+					<input type="text" id="y_start" name="y_start" data-placement=bottom value=1 />
+					<p> Enter Verticle End </p>
+					<input type="text" id="y_end" name="y_end"  data-placement=bottom value=10 />
+					
+				</div>
+				<!--  Inputs with slider support-->
+				<div class="sliders">
+					<p> Horizontal Start </p>
+					<div id="slider_x_start" class="slider"></div>
+					<p> Horizontal End </p>
+					<div id="slider_x_end" class="slider"></div>
+					<p> Vertical Start </p>
+					<div id="slider_y_start" class="slider"></div>
+					<p> Vertical End  </p>
+					<div id="slider_y_end" class="slider"></div>
+
+				</div>				
+				<!--  submit button-->
+				<button type="submit" value="submit" class="btn" id="btn">Submit</button>
+			</form>
+
+			
+
+			
+			<div id="tabs">
+			<ul>
+				<li id="instruct"><a href="#instructions">Instructions</a></li>
+			</ul>
+			<div id="instructions" class="no_delete">
+				<p> Use the inputs on the left or the sliders to make a new table</p>
+				<p> Hit submit when you are done </p>
+				<p> Double Click any other tab to delete it </p>
+			</div> 
+		</div>
+
+		
+
+		<!-- Jquery Stuff -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+    	<script type="text/javascript" src="table.js"></script>
+	</body>
+</html>		

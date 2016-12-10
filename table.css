@@ -1,0 +1,75 @@
+/*
+Name: Connor McLaughlin
+CS Username: cmclaugh
+Email: Connor_McLaughlin@student.uml.edu
+Student ID: 01372970
+
+*/
+
+
+/* Set color along with font */
+body {
+	background-color: #89CFF0;
+	font-family: 'Times New Roman';
+	margin-left:5%;
+	margin-right: 10%;
+}
+/* Put border arond control panel, set height and width */
+#data {
+	border: double;
+	float: left;
+	height: 90%;
+	width:19%;
+	min-width: 180px;
+	background-color: lightblue;
+
+}
+.sliders {
+	width: 85%;
+	margin-left: 7.5%;
+}
+
+#inputs {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.slider{
+	margin: 10px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+.btn {
+	margin-left: 35%;
+	margin-bottom: 10px;
+}
+/* Position the multiplication table to left of the control panel
+   Set the background to lightblue */
+
+/* Make each first row navy then make the text color white  */
+tr {
+	background-color: lightblue;
+}
+tr:nth-child(1) {
+    background-color: navy;
+    color: white;   
+}
+/* Make each first row navy then make the text color white */
+
+td:nth-child(1){
+	background-color: navy;
+	color: white;
+}
+/*Set up tab object style */
+#tabs {
+	margin-left: 1.5%;
+	width: 60%;
+
+	float: left;
+
+}
+/* Otherwise the tabs are huge */
+#tabs ul {
+	height: 30px;
+}
